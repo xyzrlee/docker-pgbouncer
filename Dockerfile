@@ -39,5 +39,7 @@ RUN set -ex \
 
 COPY entrypoint.sh /
 
+USER nobody
+
 ENTRYPOINT ["/entrypoint.sh"]
 

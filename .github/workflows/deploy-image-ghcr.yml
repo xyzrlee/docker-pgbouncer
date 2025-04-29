@@ -25,6 +25,6 @@ jobs:
       if: ${{ github.ref_name == 'master' }}
       run: |
         echo "${{ secrets.GITHUB_TOKEN }}" | docker login -u "${{ github.actor }}" --password-stdin ghcr.io
-        docker tag pgbouncer ghcr.io/${{github.repository_owner}}/${{env.IMAGE_NAME}}:${{env.POSTGRES_VERSION}}
-        docker push ghcr.io/${{github.repository_owner}}/${{env.IMAGE_NAME}}:${{env.POSTGRES_VERSION}}
+        docker tag pgbouncer ghcr.io/${{github.repository_owner}}/${{env.IMAGE_NAME}}:${{env.PGBOUNCER_VERSION}}
+        docker push ghcr.io/${{github.repository_owner}}/${{env.IMAGE_NAME}}:${{env.PGBOUNCER_VERSION}}
 

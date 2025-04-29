@@ -4,7 +4,7 @@ on:
 
 env:
   IMAGE_NAME: pgbouncer
-  POSTGRES_VERSION: ${{ vars.PGBOUNCER_VERSION }}
+  PGBOUNCER_VERSION: ${{ vars.PGBOUNCER_VERSION }}
 
 jobs:
   build:
